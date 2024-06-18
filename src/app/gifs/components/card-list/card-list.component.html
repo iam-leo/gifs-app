@@ -1,7 +1,7 @@
 <div *ngFor="let gif of gifs"
     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img class="rounded-t-lg" src="http://via.placeholder.com/600x300" alt="" />
+        <img class="rounded-t-lg" [src]="gif.images.downsized_medium.url" [alt]="gif.title" />
     </a>
     <div class="p-5">
         <a href="#">

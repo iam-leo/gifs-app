@@ -4,7 +4,8 @@
     <!-- History -->
 
     <div *ngFor="let tag of tags" class="my-4">
-        <button class="px-4 py-2 text-xl text-white rounded-md cursor-pointer bg-indigo-500/35 hover:bg-indigo-500/70">
+        <button class="px-4 py-2 text-xl text-white rounded-md cursor-pointer bg-indigo-500/35 hover:bg-indigo-500/70"
+            (click)="searchTag(tag)">
             {{ tag | titlecase }} </button>
     </div>
 </div>
