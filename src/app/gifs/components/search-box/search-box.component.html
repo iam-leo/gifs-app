@@ -1,6 +1,6 @@
 <div class="flex items-center space-x-4">
     <input #txtTagInput (keyup.enter)="searchTag()" type="text" name="search-gif" placeholder="Buscar gifs..."
         class="p-3 rounded-md w-96">
-    <button
-        class="px-6 py-2 text-2xl text-white rounded-md cursor-pointer bg-indigo-950 hover:bg-indigo-900">Buscar</button>
+    <button class="px-6 py-2 text-2xl text-white rounded-md cursor-pointer bg-indigo-950 hover:bg-indigo-900"
+        (click)="searchTag()">Buscar</button>
 </div>
