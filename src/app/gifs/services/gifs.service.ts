@@ -68,4 +68,12 @@ export class GifsService {
         this.gifList = resp.data;
       });
   }
+
+  public clearHistory(): void {
+    // Limpiamos el array
+    this._tagsHistory = [];
+
+    //Guardamos el array vacío en el localstorage
+    this.saveLocalStorage();
+  }
 }
